@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <h1>Formulario de datos personales</h1>
+    <form action="/action_page.php">
+      <fieldset>
+        <input
+          name="estudiante"
+          readonly="readonly"
+          type="text"
+          value="Estudiante"
+        /><br /><br /><label for="studname">Nombre:</label
+        ><input
+          id="name"
+          maxlength="15"
+          name="nameuser"
+          type="text"
+          placeholder="Ingrese su nombre"
+        />
+        <label for="studname">Apellido:</label
+        ><input
+          id="lastname"
+          maxlength="20"
+          name="lastname"
+          type="text"
+          placeholder="Ingrese su apellido"
+        /><br /><br /><label for="studmail">E-mail:</label
+        ><input
+          id="email"
+          name="email"
+          type="text"
+          placeholder="Ingrese su correo"
+        />
+        <label for="age">Edad:</label
+        ><input
+          id="age"
+          min="18"
+          max="99"
+          name="ageuser"
+          type="number"
+        /><br /><br /><label for="country">País:</label
+        ><select id="pais" name="pais">
+          <option selected="selected" value="argentina">Argentina</option>
+          <option value="brasil">Brasil</option>
+          <option value="chile">Chile</option>
+          <option value="colombia">Colombia</option></select
+        ><br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>
